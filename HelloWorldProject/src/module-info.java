@@ -1,0 +1,3 @@
+module HelloWorldProject {
+	requires jedis;
+}
