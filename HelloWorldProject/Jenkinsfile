@@ -1,13 +1,11 @@
 pipeline { 
 agent any 
-    environment {
-        PATH = "/usr/share/maven "
-    }
+   
     stages { 
         stage ('Build') { 
             steps { 
-              //  echo " clean package"
-                sh "mvn clean install"
+            echo " clean package"
+                //sh "mvn clean install"
             }
         }
         stage ('Test') {
