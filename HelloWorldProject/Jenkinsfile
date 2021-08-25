@@ -3,11 +3,17 @@ agent any
     stages { 
         stage ('Build') { 
             steps { 
-            sh 'mvn clean install'
-
-              
+                echo " clean package"
             }
         }
+        stage ('Test') {
+            steps {
+                 echo "testing"
+            }
+          
+        }  
+            
+        
 
     }           
  }
