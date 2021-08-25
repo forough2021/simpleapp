@@ -1,11 +1,9 @@
 pipeline {
-  
   any agent
-  stages  {
-    stege('Build'){
+  stages {
+    stege('Build') {
       steps {
         sh 'mvn clean'
-      
       }
     }
   }
