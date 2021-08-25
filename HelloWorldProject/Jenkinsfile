@@ -1,0 +1,12 @@
+pipeline {
+  
+  any agent
+  stages  {
+    stege('Build'){
+      steps {
+        sh 'mvn clean'
+      
+      }
+    }
+  }
+}
