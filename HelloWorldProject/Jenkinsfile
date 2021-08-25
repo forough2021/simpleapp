@@ -13,7 +13,7 @@ agent any
         stage ('Test') {
             steps {
              //sh "mvn test "
-            echo "this is testing"
+            echo "mvn test"
             }
           
         }  
